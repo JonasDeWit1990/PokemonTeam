@@ -1,0 +1,37 @@
+<table style="border:solid black 1px">
+  <tr>
+    <th></th>
+    <th class="tooltip"><img  src="../../assets/Bug.png" height="50" width="50"/><span class="tooltiptext">Bug</span></th>
+    <th class="tooltip"><img src="../../assets/Dark.png" height="50" width="50"/><span class="tooltiptext">Dark</span></th>
+    <th class="tooltip"><img src="../../assets/Dragon.png" height="50" width="50"/><span class="tooltiptext">Dragon</span></th>
+    <th class="tooltip"><img src="../../assets/Electric.png" height="50" width="50"/><span class="tooltiptext">Electric</span></th>
+    <th class="tooltip"><img src="../../assets/Fairy.png" height="50" width="50"/><span class="tooltiptext">Fairy</span></th>
+    <th class="tooltip"><img src="../../assets/Fighting.png" height="50" width="50"/><span class="tooltiptext">Fighting</span></th>
+    <th class="tooltip"><img src="../../assets/Fire.png" height="50" width="50"/><span class="tooltiptext">Fire</span></th>
+    <th class="tooltip"><img src="../../assets/Flying.png" height="50" width="50"/><span class="tooltiptext">Flying</span></th>
+    <th class="tooltip"><img src="../../assets/Ghost.png" height="50" width="50"/><span class="tooltiptext">Ghost</span></th>
+    <th class="tooltip"><img src="../../assets/Grass.png" height="50" width="50"/><span class="tooltiptext">Grass</span></th>
+    <th class="tooltip"><img src="../../assets/Ground.png" height="50" width="50"/><span class="tooltiptext">Ground</span></th>
+    <th class="tooltip"><img src="../../assets/Ice.png" height="50" width="50"/><span class="tooltiptext">Ice</span></th>
+    <th class="tooltip"><img src="../../assets/Normal.png" height="50" width="50"/><span class="tooltiptext">Normal</span></th>
+    <th class="tooltip"><img src="../../assets/Poison.png" height="50" width="50"/><span class="tooltiptext">Poison</span></th>
+    <th class="tooltip"><img src="../../assets/Psychic.png" height="50" width="50"/><span class="tooltiptext">Psychic</span></th>
+    <th class="tooltip"><img src="../../assets/Rock.png" height="50" width="50"/><span class="tooltiptext">Rock</span></th>
+    <th class="tooltip"><img src="../../assets/Steel.png" height="50" width="50"/><span class="tooltiptext">Steel</span></th>
+    <th class="tooltip"><img src="../../assets/Water.png" height="50" width="50"/><span class="tooltiptext">Water</span></th>
+  </tr>
+  <tr>
+    <td>Offensive</td>
+    <td *ngFor="let elemental of elementalArray[0]" [ngClass]="{
+      'positive' : elemental > 0,
+      'negative' : elemental < 0
+    }">{{elemental}}</td>
+  </tr>
+  <tr>
+    <td>defensive</td>
+    <td *ngFor="let elemental of elementalArray[1]" [ngClass]="{
+      'positive' : elemental > 0,
+      'negative' : elemental < 0
+    }">{{elemental}}</td>
+  </tr>
+</table>

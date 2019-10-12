@@ -1,0 +1,38 @@
+table,td, th {
+  border: solid black 1px;
+  border-collapse: collapse;
+}
+th {
+  padding: 0;
+}
+td {
+  text-align: center;
+}
+td.positive {
+  background-color: #2ECC40;
+}
+td.negative {
+  background-color: #FF4136;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

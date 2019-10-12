@@ -1,0 +1,14 @@
+li {
+  margin-bottom: 5px;
+}
+td {
+  text-align: center;
+  width: 15%;
+}
+ul {
+  list-style-type:none;
+  padding-left: 0;
+}
+div {
+  width: 1080px;
+}

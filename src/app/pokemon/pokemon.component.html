@@ -1,0 +1,52 @@
+<div>
+  <table>
+    <tr>
+      <td>
+        Pokemon 1
+        <ul>
+          <li>Type 1: <app-type-drop-down (selectedType)="Type1Selection(0,$event)" ></app-type-drop-down></li>
+          <li>Type 2: <app-type-drop-down (selectedType)="Type2Selection(0,$event)"></app-type-drop-down></li>
+        </ul>
+      </td>
+      <td>
+        Pokemon 2
+        <ul>
+          <li>Type 1: <app-type-drop-down (selectedType)="Type1Selection(1,$event)" ></app-type-drop-down></li>
+          <li>Type 2: <app-type-drop-down (selectedType)="Type2Selection(1,$event)"></app-type-drop-down></li>
+        </ul>
+      </td>
+      <td>
+        Pokemon 3
+        <ul>
+          <li>Type 1: <app-type-drop-down (selectedType)="Type1Selection(2,$event)" ></app-type-drop-down></li>
+          <li>Type 2: <app-type-drop-down (selectedType)="Type2Selection(2,$event)"></app-type-drop-down></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Pokemon 4
+        <ul>
+          <li>Type 1: <app-type-drop-down (selectedType)="Type1Selection(3,$event)" ></app-type-drop-down></li>
+          <li>Type 2: <app-type-drop-down (selectedType)="Type2Selection(3,$event)"></app-type-drop-down></li>
+        </ul>
+      </td>
+      <td>
+        Pokemon 5
+        <ul>
+          <li>Type 1: <app-type-drop-down (selectedType)="Type1Selection(4,$event)" ></app-type-drop-down></li>
+          <li>Type 2: <app-type-drop-down (selectedType)="Type2Selection(4,$event)"></app-type-drop-down></li>
+        </ul>
+      </td>
+      <td>
+        Pokemon 6
+        <ul>
+          <li>Type 1: <app-type-drop-down (selectedType)="Type1Selection(5,$event)" ></app-type-drop-down></li>
+          <li>Type 2: <app-type-drop-down (selectedType)="Type2Selection(5,$event)"></app-type-drop-down></li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <app-elemental-stat [elementalArray]="elementalArray"></app-elemental-stat>
+</div>

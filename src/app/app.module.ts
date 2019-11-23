@@ -2,19 +2,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { PokemonComponent } from './pokemon/pokemon.component';
-import { TypeDropDownComponent } from './type-drop-down/type-drop-down.component';
-import { ElementalStatComponent } from './elemental-stat/elemental-stat.component';
+import { TeamTypesComponent } from './teamTypes/teamTypes.component';
+import { TypeDropDownComponent } from './teamTypes/modules/type-drop-down/type-drop-down.component';
+import { ElementalStatComponent } from './teamTypes/modules/elemental-stat/elemental-stat.component';
+import { AppRoutingModule } from './app-routing.module';
+import { BattleComponent } from './battle/battle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PokemonComponent,
+    TeamTypesComponent,
     TypeDropDownComponent,
-    ElementalStatComponent
+    ElementalStatComponent,
+    BattleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

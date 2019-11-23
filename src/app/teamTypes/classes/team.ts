@@ -1,4 +1,4 @@
-import {Pokemon} from './pokemon';
+import {Pokemon} from '../../classes/pokemon';
 import {TypeChart} from './type-chart';
 import {Type} from './type.enum';
 

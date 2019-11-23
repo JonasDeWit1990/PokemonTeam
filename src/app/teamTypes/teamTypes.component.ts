@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {Team} from '../classes/team';
+import {Team} from './classes/team';
 
 @Component({
-  selector: 'app-pokemon',
-  templateUrl: './pokemon.component.html',
-  styleUrls: ['./pokemon.component.css']
+  selector: 'app-team-types',
+  templateUrl: './teamTypes.component.html',
+  styleUrls: ['./teamTypes.component.css']
 })
-export class PokemonComponent implements OnInit {
+export class TeamTypesComponent implements OnInit {
   team: Team;
   elementalArray: Array<Array<number>>;
 
